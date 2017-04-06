@@ -1,0 +1,15 @@
+package com.bokaro.service;
+
+import java.util.List;
+
+import org.springframework.web.multipart.MultipartFile;
+
+import com.bokaro.dto.QuestionDTO;
+
+public interface QuestionService {
+
+	QuestionDTO create(QuestionDTO questionDTO, MultipartFile[] files, String language, String type,String rootPath);
+
+	List<QuestionDTO> findAll();
+
+}
